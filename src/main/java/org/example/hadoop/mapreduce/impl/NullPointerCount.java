@@ -27,7 +27,7 @@ public class NullPointerCount {
         }
     }
 
-    public class ReducerImpl extends Reducer<Text, IntWritable, Text, IntWritable> {
+    public static class ReducerImpl extends Reducer<Text, IntWritable, Text, IntWritable> {
         public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException,
                 InterruptedException {
             int count = 0;
